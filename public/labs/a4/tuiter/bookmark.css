@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+
+   v2.0 | 20110126
+
+   License: none (public domain)
+
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+
+b,
+u,
+i,
+center,
+
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+
+fieldset,
+form,
+label,
+legend,
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+
+article,
+aside,
+canvas,
+details,
+embed,
+
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+
+time,
+mark,
+audio,
+video {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+
+    display: block;
+
+}
+
+body {
+
+    line-height: 1;
+
+}
+
+ol,
+ul {
+
+    list-style: none;
+
+}
+
+blockquote,
+q {
+
+    quotes: none;
+
+}
+
+blockquote:before,
+blockquote:after,
+
+q:before,
+q:after {
+
+    content: '';
+
+    content: none;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+}
+
+
+/* Box Model Hack */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+
+    clear: both;
+
+}
+
+
+
+/******************************************
+  
+  /* BASE STYLES
+  
+/*******************************************/
+body{
+    background-color: black;
+    color: white
+}
+
+.wd-top{
+    border: 1px solid lightgray;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-top h1{
+    color:white;
+    font-size: 20px;
+}
+
+.wd-top span{
+    color:lightgray;
+    font-size: 13px;
+    margin-top: 10px;
+    /* border: 1px solid grey; */
+}
+
+.wd-top2{
+    border: 1px solid red;
+    margin-left: 16px;
+    margin-top: 12px;
+    display: inline-block;
+    height: 100px;
+}
+
+.wd-top2left{
+    float: left;
+    width: 3%;
+    border: 1px solid red;
+    height: 100px;
+}
+
+.wd-top2right {
+    float: right;
+    width: 97%;
+    border: 1px solid red;
+    width: 506px;
+}
+
+.wd-second img{
+    border-radius: 40px;
+}
+
+.wd-second{
+    width:506px;
+    border: 1px solid lightgrey;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.wd-second p{
+    color:lightgray;
+}
+
+ul li{
+    float: left;
+    width: 7%;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.red{
+    color:red;
+}
+
+.wd-second span{
+    margin-top: 12px;
+}
+
+.wd-second p{
+    margin-top: 12px;
+    border: 1px solid red;
+}
+
+
+/******************************************
+  
+  /* LAYOUT
+  
+  /*******************************************/
+
+header {}
+
+
+
+footer {}
+
+
+
+/******************************************
+  
+  /* ADDITIONAL STYLES
+  
+  /*******************************************/

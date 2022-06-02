@@ -162,6 +162,10 @@
         background-color: red;
         color: white;
     }
+
+    .media1{
+        color: green;
+    }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
     body {
@@ -172,6 +176,10 @@
         background-color: yellow;
         color: black;
     }
+
+    .media2{
+        color:red;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1800px) {
     body {
@@ -181,6 +189,9 @@
     .media-query {
         background-color: blue;
         color: white;
+    }
+    .media3{
+        color:grey;
     }
 }
 
