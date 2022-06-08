@@ -1,0 +1,50 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* BASE STYLE   */
+/* body{
+    background-color: black;
+} */
+
+.btn {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.row span{
+    color:grey;
+}
+
+.row .title,p{
+  color:black;
+  font-weight: bold;
+}
+
+.list-grou{
+    background-color: black !important;
+
+}
