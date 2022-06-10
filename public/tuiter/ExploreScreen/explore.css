@@ -21,9 +21,10 @@
 
 
 /* BASE STYLE   */
-/* body{
-    background-color: black;
-} */
+span, p{
+    color:white;
+}
+
 
 .btn {
     width: 100%;
@@ -36,15 +37,11 @@
 }
 
 .row span{
-    color:grey;
+    color:white;
 }
 
 .row .title,p{
-  color:black;
+  color:white;
   font-weight: bold;
 }
 
-.list-grou{
-    background-color: black !important;
-
-}
