@@ -9,19 +9,22 @@ import App from './App'; //app is the top root, similar to main function in Java
 //import reportWebVitals from './reportWebVitals';
 // import NavigationExample from './components/NavigationExample';
 import NavigationSidebar from './components/lectures/Build/NavigationSidebar';
-
+// import Add from './components/Add';
+import Subtract from './components/Subtract';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-root.render(             
+root.render(     
+  <App/>,
+  // <Add a={2} b={3}/>, 
+  // <Subtract a={2} b={3}/>, 
   //render: first item what you want to draw, where you want to draw
   // function become tag, use attribute to pass a map
   // <HelloWorld/>,
   // <Todo todos={todos}/>, 
   // <NavigationExample/>, 
-  <App/>,
   // <NavigationSidebar active="explore"/>,
   document.getElementById('root') //inject into div
 );
