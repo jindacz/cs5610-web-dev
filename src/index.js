@@ -1,27 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; //glue for reactJS pump into empty div
-//import './index.css';
+// import './index.css';
 import App from './App'; //app is the top root, similar to main function in Java
 // import HelloWorld from "./components/hello-world";
 // import HelloWorld from "./hello";
 // import Todo from "./components/Todo"
 // import todos from './components/todos.json'
-//import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 // import NavigationExample from './components/NavigationExample';
 import NavigationSidebar from './components/lectures/Build/NavigationSidebar';
-// import Add from './components/Add';
+import Add from './components/Add';
 import Subtract from './components/Subtract';
-
+import Radio from './components/midterm/radio.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-root.render(     
-  <App/>,
+root.render(    
+  
+  // <App/>, // injecting the whole AP into the dom
+  <Radio/>,
   // <Add a={2} b={3}/>, 
   // <Subtract a={2} b={3}/>, 
-  //render: first item what you want to draw, where you want to draw
-  // function become tag, use attribute to pass a map
+  
   // <HelloWorld/>,
   // <Todo todos={todos}/>, 
   // <NavigationExample/>, 
