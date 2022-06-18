@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; //glue for reactJS pump into empty div
 //import './index.css';
 import App from './App'; //app is the top root, similar to main function in Java
-import HelloWorld from "./components/hello-world";
+// import HelloWorld from "./components/hello-world";
 // import HelloWorld from "./hello";
 // import Todo from "./components/Todo"
 // import todos from './components/todos.json'
 //import reportWebVitals from './reportWebVitals';
-import NavigationExample from './components/NavigationExample';
+// import NavigationExample from './components/NavigationExample';
+import NavigationSidebar from './components/lectures/Build/NavigationSidebar';
 
 
 
@@ -21,6 +22,7 @@ root.render(
   // <Todo todos={todos}/>, 
   // <NavigationExample/>, 
   <App/>,
+  // <NavigationSidebar active="explore"/>,
   document.getElementById('root') //inject into div
 );
 

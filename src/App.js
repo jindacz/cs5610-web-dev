@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import HelloWorld from './hello';
 // import Practice from "./components/Practice";
-
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
