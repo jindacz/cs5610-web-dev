@@ -1,6 +1,8 @@
 import React from "react";
-import todos from './todos'
+// import todos from './todos'
 import TodoItem from "./TotoItem";
+// import {Link} from "react-router-dom"
+import Navigation from "./Navigation";
 
 const Todo = (
     {
@@ -18,13 +20,15 @@ const Todo = (
         // switch from js to html and to js use {}
         // use anonymous tag to not break the syntax
         <> 
+            <Navigation/>
             <h1>Todo</h1>
             <ul>
                 {
                     todos.map((todo) => {
-                        return (<TodoItem todo={todo}/>)
-                    })
-                }
+                        return (<TodoItem todo={todo}/>
+                    )
+                })
+            }
             <TodoItem todo={{title:'Buy the milk!!!', status:'Completed'}}/>
             <TodoItem todo={{title:'Pick up the kids', status:'Completed'}}/>
             <TodoItem todo={{title:'Walk the dogs', status:'Completed'}}/>

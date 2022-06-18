@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; //glue for reactJS pump into empty div
 //import './index.css';
 import App from './App'; //app is the top root, similar to main function in Java
-
-import HelloWorld from "./hello";
-import Todo from "./components/Todo"
-import todos from './components/todos.json'
+import HelloWorld from "./components/hello-world";
+// import HelloWorld from "./hello";
+// import Todo from "./components/Todo"
+// import todos from './components/todos.json'
 //import reportWebVitals from './reportWebVitals';
 import NavigationExample from './components/NavigationExample';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,8 @@ root.render(
   // function become tag, use attribute to pass a map
   // <HelloWorld/>,
   // <Todo todos={todos}/>, 
-  <NavigationExample/>,
+  // <NavigationExample/>, 
+  <App/>,
   document.getElementById('root') //inject into div
 );
 
