@@ -12,14 +12,16 @@ import NavigationSidebar from './components/lectures/Build/NavigationSidebar';
 import Add from './components/Add';
 import Subtract from './components/Subtract';
 import Radio from './components/midterm/radio.js'
+// import ReduxExamples from './components/lectures/w8/ReduxExamples';
+import ReduxExamples from './components/labs/redux-examples';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(    
-  
+  <ReduxExamples/>,
   // <App/>, // injecting the whole AP into the dom
-  <Radio/>,
+  // <Radio/>,
   // <Add a={2} b={3}/>, 
   // <Subtract a={2} b={3}/>, 
   

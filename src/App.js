@@ -11,31 +11,38 @@ import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen.js";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen.js";
 import Tuiter from "./components/tuiter";
 // import Todo from "./components/lecture/w6/Todo";
+import Todos from './components/labs/redux-examples/Todos.js';
 
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <Routes>
+    <div>
+      <Todos/>
+    </div>
+    
 
-          <Route path="/tuiter/home" element={<HomeScreen />} />
-          <Route path="/tuiter/explore" element={<ExploreScreen />} />
+    // <BrowserRouter>
+    //   <div className="container">
+    //     <Routes>
 
-          <Route path="/hello"
-            exact={true}
-            element={<HelloWorld />} />
-          <Route path="/"
-            exact={true}
-            element={<Labs />} />
-          <Route path="/tuiter"
-            exact={true}
-            element={<Tuiter />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    //       <Route path="/tuiter/home" element={<HomeScreen />} />
+    //       <Route path="/tuiter/explore" element={<ExploreScreen />} />
+
+    //       <Route path="/hello"
+    //         exact={true}
+    //         element={<HelloWorld />} />
+    //       <Route path="/"
+    //         exact={true}
+    //         element={<Labs />} />
+    //       <Route path="/tuiter"
+    //         exact={true}
+    //         element={<Tuiter />} />
+    //     </Routes>
+    //   </div>
+    // </BrowserRouter>
+
 
     // <BrowserRouter>
     //   <div className='container'>
@@ -43,7 +50,7 @@ function App() {
     //       <HelloWorld/>
     //     </Route>
     //     <Route path={['/','/practice']} exact={true}>
-    //       <Practice/>
+    //       <Practice/> 
     //     </Route>
     //     <Route path='/twitter/home' component={HomeScreen}/>
     //     <Route path='/twitter/explore' component={ExploreScreen}/>
@@ -52,7 +59,11 @@ function App() {
     //     </Route>
     //   </div>
     // </BrowserRouter>
-  );
+    
+  
+  )
 }
 
 export default App;
+
+
