@@ -1,0 +1,16 @@
+[
+    {
+      "firstName": "C",
+      "lastName": "Z",
+      "handle": "Dr.C",
+      "profilePicture": "http://placekitten.com/200/300",
+      "bannerPicture": "http://placekitten.com/200/300",
+      "bio": "Sophomore @ Northeastern University, CS & Math, Spikeball, Snowboarding",
+      "website": "http://placekitten.com/200/300",
+      "location": "Boston, MA",
+      "dateOfBirth": "10/23/2001",
+      "dateJoined": "1/2018",
+      "followingCount": 305,
+      "followersCount": 278
+    }
+  ]
