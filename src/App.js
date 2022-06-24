@@ -5,13 +5,13 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
-import HomeScreen from "./components/tuiter/HomeScreen/index.js";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen.js";
 import Tuiter from "./components/tuiter";
 import todosReducer from './components/labs/redux-examples/reducers/todos-reducer';
 import { createStore } from "redux"
 import ProfileScreen from './components/tuiter/ProfileScreen';
 import EditProfileScreen from './components/tuiter/EditProfile';
+import HomeScreen from "./components/tuiter/HomeScreen";
 
 const store = createStore(todosReducer)
 
@@ -22,22 +22,15 @@ function App() {
               <Routes>
                   <Route path="/">
                       <Route index element={<Labs/>}/>
-                      <Route path="labs" exact={true} element={<Labs/>}/>
-                      <Route path="hello"
-                             element={<HelloWorld/>}/>
-                      <Route path={"tuiter"}
-                      element={<Tuiter/>}>
-                          <Route index
-                                 element={<HomeScreen/>}/>
-                          <Route path="explore"
-                                 element={<ExploreScreen/>}/>
-                          <Route path="profile"
-                                 element={<ProfileScreen/>}/>
-                          <Route path="edit-profile"
-                                 element={<EditProfileScreen/>}/>
-
-                       
-
+                      <Route path="labs" element={<Labs/>}/>
+                      <Route path="hello" element={<HelloWorld/>}/>
+                      <Route path="tuiter" element={<Tuiter/>}>
+                          <Route path="explore" element={<ExploreScreen/>}/>
+                          <Route path="profile">
+                              <Route index element={<ProfileScreen/>} />
+                              <Route path="edit" element={<EditProfileScreen/>} />
+                          </Route>
+                          <Route index element={<HomeScreen/>}/>
                       </Route>
                   </Route>
               </Routes>
@@ -45,7 +38,6 @@ function App() {
       </BrowserRouter>
   );
 }
-
 
 export default App;
 

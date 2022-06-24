@@ -12,7 +12,7 @@ const NavigationSidebar = ({
                       className="list-group-item ">
                     <i className="fab fa-twitter fa-lg p-1"></i>
                 </Link>
-                <Link to="/tuiter/home"
+                <Link to="/tuiter"
                    className={`list-group-item list-group-item-action ${active === '/tuiter' ? 'active'
                                                                                          : ''}`}>
                     <i className="fas fa-home fa-lg p-1 wd-icon"></i> <span
