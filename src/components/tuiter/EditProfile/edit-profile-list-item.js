@@ -5,13 +5,13 @@ import {Link} from "react-router-dom";
 
 const EditProfileListItem = ({
                                  oldProfile = {
-                                     "firstName": "Pranav",
-                                     "lastName": "Phadke",
-                                     "handle": "phadke.pr",
-                                     "profilePicture": "../../../tuiter/Images/pranav.jpg",
-                                     "bannerPicture": "../../../tuiter/Images/background.jpg",
-                                     "bio": "Sophomore @ Northeastern University, CS & Math, Spikeball, Snowboarding",
-                                     "website": "https://github.com/pranavphadke1",
+                                     "firstName": "C",
+                                     "lastName": "Z",
+                                     "handle": "CZ",
+                                     "profilePicture": "http://placekitten.com/200/300",
+                                     "bannerPicture": "http://placekitten.com/200/300",
+                                     "bio": "Snowboarding",
+                                     "website": "http://placekitten.com/200/300",
                                      "location": "Boston, MA",
                                      "dateOfBirth": "10/23/2001",
                                      "dateJoined": "1/2018",
