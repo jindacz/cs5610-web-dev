@@ -1,7 +1,7 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar/index.js";
+import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList/index.js";
-import PostList from "../PostList/index.js"
+import PostList from "../PostList";
 import {Link} from "react-router-dom";
 
 const HomeScreen = () => {
@@ -27,3 +27,6 @@ const HomeScreen = () => {
     </>);
 };
 export default HomeScreen;
+© 2022 GitHub, Inc.
+Terms
+Privacy

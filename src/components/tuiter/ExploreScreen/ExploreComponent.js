@@ -4,57 +4,38 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     return (
         <>
-            <div className="row">
-                {/*// <!-- search field and cog -->*/}
-                <div className="col-11">
-                    <div className="input-group border rounded-pill">
-                        <span className="input-group-text bg-transparent border-0">
-                            <i className="fas fa-search">
-                            </i>
-                        </span>
-                        <input type="text" placeholder="Search Twitter" style={{"color":" #fff"}}
-                               className="form-control bg-transparent border-0 white-typer"/>
-                    </div>
-                </div>
-                <div className="col-1 text-primary">
-                    <i className="fas fa-cog fa-2x p-1 f-button-color">
-                    </i>
-                </div>
+            <div className="wd-search-bar-area position-relative">
+                <i className="wd-magnify-glass position-absolute fa fa-search-plus "></i>
+                <input className="wd-search-bar ps-5" placeholder="Search Twitter"/>
+                <a href="explore-settings.html"> <i className="wd-gear fa fa-cog"></i> </a>
             </div>
-            <ul className="nav mb-2 nav-tabs">
-                {/*// <!-- tabs -->*/}
+            <ul className="nav mb-2 nav-tabs mt-3">
                 <li className="nav-item">
-                    <a className="nav-link active" data-bs-toggle="tab" href="#foryou">For you</a>
+                    <a className="nav-link active" href="for-you.html">For you</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" data-bs-toggle="tab" href="#trending">Trending</a>
+                    <a className="nav-link" href="trending.html">Trending</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" data-bs-toggle="tab" href="#news">News</a>
+                    <a className="nav-link" href="news.html">News</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" data-bs-toggle="tab" href="#sports">Sports</a>
+                    <a className="nav-link" href="sports.html">Sports</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" data-bs-toggle="tab" href="#entertainment">Entertainment</a>
+                    <a className="nav-link d-sm-none d-md-block"
+                       href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
-            <ul className="list-group border-0">
-                <li className="list-group-item border-0 m-0 p-0">
-                    <div className="position-relative text-white">
-                        <img src="http://placekitten.com/200/300" className="img-fluid" alt="tesla">
-                        </img>
-                            <div className="fw-bold fs-2 position-absolute">
-                                {/*style={{"bottom": "10px", "left": "10px"}}*/}
-                                SpaceX's Starship
-                            </div>
-                    </div>
+            <div className="list-group">
+                <li className="list-group-item p-0 position-relative">
+                    <img src="http://placekitten.com/500/300" className="wd-image"/>
+                    <label className="wd-image-text">SpaceX's Starship</label>
                 </li>
-            </ul>
-            {/*// <!-- image with overlaid text  -->*/}
-            {<PostSummaryList></PostSummaryList>}
-        </>
-);
-}
+            </div>
 
+            {PostSummaryList()}
+        </>
+    );
+}
 export default ExploreComponent;

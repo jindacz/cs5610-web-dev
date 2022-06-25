@@ -1,3 +1,6 @@
+import React from "react";
+import './Postlist.css';
+
 const PostItem = ({
     post = {
         "userName": "Elon Musk",
