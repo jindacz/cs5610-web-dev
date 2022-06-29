@@ -1,20 +1,7 @@
-// const data = [
-//     {
-//       _id: "123",
-//       DataTransferItemList: "Accelerate the world's transition to sustainable energy",
-//       done: false
-//     },
-//     {
-//       _id: "234",
-//       do: "Reduce space transportation costs to become a spacefaring civilization",
-//       done: false
-//     },
-//    ];
+// import todos from "../reducers/todos.json"
 
 // implement a FSM
-import todos from "../reducers/todos.json"
-
-const todosReducer = (state = todos, action) => {
+const todosReducer = (state = [], action) => {
     let newState = state;
     switch (action.type) {
         case 'create-todo':
@@ -43,6 +30,8 @@ const todosReducer = (state = todos, action) => {
         case 'get-todos':
             return state;
             break;
+        case 'set-todos':
+            return action.todos
         default:
             return state;
     }
